@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZaraTherapyClinic</title>
+    <link rel="icon" type="image/x-icon" href="assets/Img/logo_web.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/shopping.css">
+    <link rel="stylesheet" href="assets/font/Roboto/stylesheet.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.2.0-beta1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.2.0-beta1-dist/css/bootstrap-reboot.min.css">
+    <script src="assets/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/jquery/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/carousel/owl.theme.default.min.css">
+    <script src="assets/carousel/owl.carousel.js"></script>
+</head>
+
+<body class="scroll">
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-xl bg-white">
+
+    </nav>
+
+
+    <!-- BODY -->
+    <div class="container product-info p-4">
+        <div class="DataProduct">
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <!-- <div class="footer w-100"></div> -->
+
+    <!-- login -->
+    <div class="background-signup justify-content-center align-items-center"></div>
+    <div id="toast"></div>
+
+</body>
+
+</html>
+<script src="./assets/nav.js"></script>
+<script src="./assets/signup.js"></script>
+<script src="./assets/footer.js"></script>
+<script src="./assets/products.js"></script>
+<script src="./assets/countUp/countUp.js"></script>
+<script>
+    $(document).ready(function () {
+        if (!sessionStorage.getItem("Id")) {
+            sessionStorage.setItem("Id", localStorage.getItem("IdPage"));
+            sessionStorage.setItem("Name", localStorage.getItem("NamePage"));
+        }
+        var id = sessionStorage.getItem("Id");
+        var Name = sessionStorage.getItem("Name");
+        switch (Name) {
+            case "environs":
+                $(".DataProduct").html(`
+            <div class="text-center">
+                <a href="#">
+                    <img src="${environs[id].saleimg}"
+                        alt="">
+                </a>
+            </div>
+            <div class="product-info-content">
+                <h3 class="NameProduct text-center s-20 mb-4">${environs[id].name}</h3>
+                <h3 class="text-center">DESCRIPTION</h3>
+                <div class="s-14 p-3">
+                    <p class="text-justify">${environs[id].infoproduct}</p>
+                    <div class="Benefits-container">
+                        <h3></h3>
+                        <ul class="Benefits"></ul>
+                    </div>
+                    <div class="use-container">
+                        <h3></h3>
+                        <ul class="use" style="list-style: none;"></ul>
+                    </div>
+                    <div class="Ingredients-container">
+                        <h3></h3>
+                    </div>
+                    <p class="text-justify mt-2 mb-2 fst-italic">${environs[id].warning1}</p>
+                    <p class="text-justify fst-italic">${environs[id].warning2}</p>
+                </div>
+            </div>
+        `)
+                if (environs[id].Benefits.length >= 1) {
+                    $(".Benefits-container h3").text("Benefits: ")
+                }
+                if (environs[id].HowToUse.length >= 1) {
+                    $(".use-container h3").text("How to use: ")
+                }
+                if (environs[id].Ingredients.length >= 1) {
+                    $(".Ingredients-container h3").text("Ingredients: ")
+                }
+                for (let i = 0; i < environs[id].Benefits.length; i++) {
+                    $(".Benefits").append(`
+                    <li>${environs[id].Benefits[i]}</li>
+                `)
+                }
+                for (let i = 0; i < environs[id].HowToUse.length; i++) {
+                    $(".use").append(`
+                    <li class="mt-2">${environs[id].HowToUse[i]}</li>
+                `)
+                }
+                for (let i = 0; i < environs[id].Ingredients.length; i++) {
+                    $(".Ingredients-container").append(`
+                    <p>${environs[id].Ingredients[i]}</p>
+                `)
+                }
+
+                break;
+            case "murad":
+                $(".DataProduct").html(`
+                <div class="text-center">
+                    <a href="#">
+                        <img src="${murad[id].img}"
+                            alt="">
+                    </a>
+                </div>
+                <div class="product-info-content">
+                    <h3 class="NameProduct text-center">${murad[id].name}</h3>
+                    <h3 class="text-center">DESCRIPTION</h3>
+                <div class="s-14 p-3">
+                    <p class="text-justify">${murad[id].infoproduct}</p>
+                    <div class="Benefits-container">
+                        <h3></h3>
+                        <ul class="Benefits"></ul>
+                    </div>
+                    <div class="use-container">
+                        <h3></h3>
+                        <ul class="use" style="list-style: none;"></ul>
+                    </div>
+                    <div class="Ingredients-container">
+                        <h3></h3>
+                    </div>
+                        <p class="text-justify mt-2 mb-2 fst-italic">${murad[id].warning1}</p>
+                        <p class="text-justify fst-italic">${murad[id].warning2}</p>
+                    </div>
+                </div>      
+            `)
+                if (murad[id].Benefits.length >= 1) {
+                    $(".Benefits-container h3").text("Benefits: ")
+                }
+                if (murad[id].HowToUse.length >= 1) {
+                    $(".use-container h3").text("How to use: ")
+                }
+                if (murad[id].Ingredients.length >= 1) {
+                    $(".Ingredients-container h3").text("Ingredients: ")
+                }
+                for (let i = 0; i < murad[id].Benefits.length; i++) {
+                    $(".Benefits").append(`
+                    <li>${murad[id].Benefits[i]}</li>
+                `)
+                }
+                for (let i = 0; i < murad[id].HowToUse.length; i++) {
+                    $(".use").append(`
+                    <li class="mt-2">${murad[id].HowToUse[i]}</li>
+                `)
+                }
+                for (let i = 0; i < murad[id].Ingredients.length; i++) {
+                    $(".Ingredients-container").append(`
+                    <p>${murad[id].Ingredients[i]}</p>
+                `)
+                }
+                break;
+            case "equipments":
+                $(".DataProduct").html(`
+                <div class="text-center">
+                    <a href="#">
+                        <img src="${equipments[id].img}"
+                            alt="">
+                    </a>
+                </div>
+                <div class="product-info-content">
+                    <h3 class="NameProduct text-center">${equipments[id].name}</h3>
+                    <h3 class="text-center">DESCRIPTION</h3>
+                <div class="s-14 p-3">
+                    <p class="text-justify">${equipments[id].infoproduct}</p>
+                    <div class="Benefits-container">
+                        <h3></h3>
+                        <ul class="Benefits"></ul>
+                    </div>
+                    <div class="use-container">
+                        <h3></h3>
+                        <ul class="use" style="list-style: none;"></ul>
+                    </div>
+                    <div class="Ingredients-container">
+                        <h3></h3>
+                    </div>
+                        <p class="text-justify mt-2 mb-2 fst-italic">${equipments[id].warning1}</p>
+                        <p class="text-justify fst-italic">${equipments[id].warning2}</p>
+                    </div>
+                </div>      
+            `)
+                if (equipments[id].Benefits.length >= 1) {
+                    $(".Benefits-container h3").text("Benefits: ")
+                }
+                if (equipments[id].HowToUse.length >= 1) {
+                    $(".use-container h3").text("How to use: ")
+                }
+                if (equipments[id].Ingredients.length >= 1) {
+                    $(".Ingredients-container h3").text("Ingredients: ")
+                }
+                for (let i = 0; i < equipments[id].Benefits.length; i++) {
+                    $(".Benefits").append(`
+                    <li>${equipments[id].Benefits[i]}</li>
+                `)
+                }
+                for (let i = 0; i < equipments[id].HowToUse.length; i++) {
+                    $(".use").append(`
+                    <li class="mt-2">${equipments[id].HowToUse[i]}</li>
+                `)
+                }
+                for (let i = 0; i < equipments[id].Ingredients.length; i++) {
+                    $(".Ingredients-container").append(`
+                    <p>${equipments[id].Ingredients[i]}</p>
+                `)
+                }
+                break;
+
+            default:
+                break;
+        }
+
+
+        $(".product-info div[class=btn-group] button:first-child").click(function () {
+            $(".product-info div[class=btn-group] input").val(parseInt($(".product-info div[class=btn-group] input").val()) - 1)
+            if ($(".product-info div[class=btn-group] input").val() < 1) {
+                $(".product-info div[class=btn-group] input").val(1)
+            }
+        })
+        $(".product-info div[class=btn-group] button:last-child").click(function () {
+            $(".product-info div[class=btn-group] input").val(parseInt($(".product-info div[class=btn-group] input").val()) + 1)
+        })
+
+    })
+</script>

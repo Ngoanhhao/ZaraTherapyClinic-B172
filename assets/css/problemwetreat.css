@@ -1,0 +1,148 @@
+.bodytop-background{
+    padding-top: 31%;
+    margin-top: 72.2px;
+    background-size: cover;
+}
+.bodytop-background-disc{
+    background-image: url("../Img/DiscSyndrome/thoat-vi-dia-dem.jpg");
+}
+
+.bodytop-background-scia{
+    background-image: url("../Img/sciatica/than-kinh-toa-1.jpg");
+}
+
+.bodytop-background-neck{
+    background-image: url("../Img/Neckpain/thoai-hoa-dot-song-co-desktop-1.jpg");
+}
+.bodytop-background-head{
+    background-image: url("../Img/Headaches/dau-dau-desktop-1.jpg");
+}
+.bodytop-background-foot{
+    background-image: url("../Img/foot/dau-chan-desktop.jpg");
+}
+.bodytop-background-elbow{
+    background-image: url("../Img/elbow/dau-khuyu-tay-desktop.jpg");
+}
+.bodytop-background-wrist{
+    background-image: url("../Img/wrist/dau-co-tay-desktop.jpg");
+}
+.bodytop-background-low{
+    background-image: url("../Img/low/dau-that-lung-desktop.jpg");
+}
+.bodytop-background-scoliosis{
+    background-image: url("../Img/Scoliosis/veo-cot-song-desktop.jpg");
+}
+.bodytop-background-knee{
+    background-image: url("../Img/knee/dau-dau-goi-desktop.jpg");
+}
+.bodytop-background-shoulder{
+    background-image: url("../Img/ShoulderPain/dau-vai-desktop.jpg");
+}
+.bodytop-background-ankle{
+    background-image: url("../Img/ankle/dau-mat-ca-desktop.jpg");
+}
+
+.bodytop-background-pneumex{
+    background-image: url("../anh_background/pneumex-pneuback-mobile.jpg"); 
+}
+.bodytop-background-vertetrac{
+    background-image: url("../anh_background/vertetrac-and-cervico-2000-mobile.jpg");
+}
+.bodytop-background-shockwave{
+    background-image: url("../anh_background/acc-combined-therapies-physiotherapy-shockwave-mobile.png");
+}
+.bodytop-background-physiotherapy{
+    background-image: url("../anh_background/acc-combined-therapies-physiotherapy-mobile.png");
+}
+.bodytop-background-manualtherapy{
+    background-image: url("../anh_background/lieu-phap-thu-cong-mobile.jpg");
+}
+.bodytop-background-footorthortics{
+    background-image: url("../anh_background/chinh-hinh-ban-chan-mobile-1.jpg");
+}
+.bodytop-background-dts{
+    background-image: url("../anh_background/dieu-tri-dts-mobile.jpg");
+}
+.bodytop-background-laser{
+    background-image: url("../anh_background/acc-combined-therapies-physiotherapy-laser-mobile.png");
+}
+.bodytop-background-chiropractic{
+    background-image: url("../anh_background/Tri-lieu-than-kinh-cot-song-desktop.jpg");
+}
+.bodytop-background-activetherapeuticmovement{
+    background-image: url("../anh_background/thiet-bi-tri-lieu-atm2-mobile.jpg");
+}
+
+
+
+.discsyndrome
+,.pneumexpneuback{
+    max-width: 1100px !important;
+}
+.discsyndrome img:hover
+,.pneumexpneuback img:hover{
+    cursor: pointer;
+}
+.bg-img{
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 100;
+}
+.bg-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) !important;
+}
+
+.discsyndrome p
+,.pneumexpneuback p{
+    text-align: justify;
+}
+
+.bodytop-background{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.bodytop-background-content {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: absolute;
+    left: 100px;
+    top: 40%;
+}
+
+p:first-child,.p1{
+    margin-top: 0.5rem!important;
+    margin-bottom: 1.5rem!important;
+    font-style: italic;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h1{
+    margin: 1.5rem 0 0 ;
+}
+h3{
+    display: inline-block;
+}
+.img1{
+    margin: 1.5rem 0;
+}
+ul{
+    margin-left: 10px;
+}
+ul li{
+    margin: 7px 0;
+}
+body a{
+    text-decoration: none;
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZaraTherapyClinic</title>
+    <link rel="icon" type="image/x-icon" href="assets/Img/logo_web.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/shopping.css">
+    <link rel="stylesheet" href="assets/font/Roboto/stylesheet.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.2.0-beta1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.2.0-beta1-dist/css/bootstrap-reboot.min.css">
+    <script src="assets/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/jquery/jquery-3.6.0.js"></script>
+    <script src="assets/jquery/src/ajax.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/carousel/owl.theme.default.min.css">
+    <script src="assets/carousel/owl.carousel.js"></script>
+</head>
+
+<body class="scroll">
+
+
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-xl bg-white">
+
+    </nav>
+
+
+    <!-- BODY -->
+
+    <div class="products d-flex row flex-column">
+        <!-- menu left -->
+        <div class="col-12 row">
+            <div class="col-md-10 col-sm-8 col-8 d-flex">
+                <input class="form-control s-16" type="text" placeholder="Search" aria-label="Search">
+                <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="col-md-2 col-sm-4 col-4  dropdown">
+                <button class="btn btn-products s-14" type="button">
+                    Products <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu h-auto menu-products" aria-labelledby="dropdownMenuButton1">
+                    <li class="dropdown-item w-100 Skinessentials d-flex justify-content-between" id="nameinfo">Skin
+                        essentials
+                    </li>
+                    <li class="dropdown-item"><a class="environ">Environ</a></li>
+                    <li class="dropdown-item"><a class="murad">Murad</a></li>
+                    <li class="s-16 menu3 dropdown-item Equipment" id="nameinfo">Equipment</li>
+                </ul>
+            </div>
+        </div>
+        <!-- products -->
+        <div class="col-12 row mt-3">
+
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer w-100"></div>
+
+    <!-- login -->
+    <div class="background-signup justify-content-center align-items-center"></div>
+    <div id="toast"></div>
+
+</body>
+
+</html>
+<script src="./assets/nav.js"></script>
+<script src="./assets/toast.js"></script>
+<script src="./assets/signup.js"></script>
+<script src="./assets/footer.js"></script>
+<script src="./assets/products.js"></script>
+<script src="./assets/countUp/countUp.js"></script>
+<script>    
+    $(document).ready(function () {
+        localStorage.setItem("NamePage", "environs")
+        sessionStorage.setItem("IDshop", "environs")
+        for (var i = 0; i < environs.length; i++) {
+            $(`.col-12:last-child`).append(`<div class="menu1 col-lg-3 col-md-4 col-sm-6"></div>`)
+            $(`.col-12:last-child .col-lg-3:nth-child(${i + 1})`).html(`
+                <div class="product-content">
+                        <div id="product">
+                            <a href="./dataProducts.html" target="_blank" titlee="product${i}" data-id="${i}" data-name="environs">
+                                <img src="${environs[i].img}"
+                                    alt="">
+                                <span id="infoproduct" class="product${i} text-start"><h3>DESCRIPTION</h3> <hr> <p class="s-16"> <p class="s-16">${environs[i].infoproduct}</p><p class="s-16 mt-2 mb-2 fst-italic">${environs[i].warning1}</p><p class="s-16 fst-italic">${environs[i].warning2}</p></span>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="NameProduct text-center">${environs[i].name}</h3>
+                            <p class="d-inline-block">Price: </p><h3 class="Money text-start d-inline-block" style="color: #0d6efd;"> ${environs[i].price}</h3>
+                            <button type="button" class="btn btn-outline-secondary w-100 s-16 mt-3" data-id="${i}" data-name="environs" data-quality="0">Add to cart</button>
+                        </div>
+                    </div>
+                `)
+        }
+        reloadd()
+        productinfo()
+        infoproduct()
+
+
+        // menu
+
+
+
+        $(".environ").click(function () {
+            localStorage.setItem("NamePage", "environs")
+            sessionStorage.setItem("IDshop", "environs")
+            $(".products .col-12:last-child").html("");
+            for (var i = 0; i < environs.length; i++) {
+                $(`.col-12:last-child`).append(`<div class="menu1 col-lg-3 col-md-4 col-sm-6"></div>`)
+                $(`.col-12:last-child .col-lg-3:nth-child(${i + 1})`).html(`
+                <div class="product-content">
+                        <div>
+                            <a href="./dataProducts.html" target="_blank" titlee="product${i}" data-id="${i}" data-name="environs">
+                                <img src="${environs[i].img}"
+                                    alt="">
+                                    <span id="infoproduct" class="product${i} text-start"><h3>DESCRIPTION</h3> <hr> <p class="s-16"> ${environs[i].infoproduct}</p><p class="s-16 mt-2 mb-2 fst-italic">${environs[i].warning1} </p><p class="s-16 fst-italic"> ${environs[i].warning2}</p></span>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="NameProduct text-center">${environs[i].name}</h3>
+                            <p class="d-inline-block">Price: </p><h3 class="Money text-start d-inline-block" style="color: #0d6efd;"> ${environs[i].price}</h3>
+                            <button type="button" class="btn btn-outline-secondary w-100 s-16 mt-3" data-id="${i}" data-name="environs" data-quality="0">Add to cart</button>
+                        </div>
+                    </div>
+                `)
+            }
+            sessionStorage.setItem("IDshop", "environs")
+            reloadd()
+            productinfo()
+            infoproduct()
+        })
+        $(".murad").click(function () {
+            localStorage.setItem("NamePage", "murad")
+            sessionStorage.setItem("IDshop", "murad")
+            $(".products .col-12:last-child").html("");
+            for (var i = 0; i < murad.length; i++) {
+                $(`.col-12:last-child`).append(`<div class="menu1 col-lg-3 col-md-4 col-sm-6"></div>`)
+                $(`.col-12:last-child .col-lg-3:nth-child(${i + 1})`).html(`
+                <div class="product-content">
+                    <div>
+                        <a href="./dataProducts.html" target="_blank" titlee="product${i}" data-id="${i}" data-name="murad">
+                            <img src="${murad[i].img}"
+                                alt="">
+                                <span id="infoproduct" class="product${i} text-start"><h3>DESCRIPTION</h3> <hr> <p class="s-16"> ${murad[i].infoproduct}</p><p class="s-16 mt-2 mb-2 fst-italic"> ${murad[i].warning1} </p><p class="s-16 fst-italic"> ${murad[i].warning2}</p></span>
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="NameProduct text-center">${murad[i].name}</h3>
+                        <p class="d-inline-block">Price: </p><h3 class="Money text-start d-inline-block" style="color: #0d6efd;"> ${murad[i].price}</h3>
+                        <button type="button" class="btn btn-outline-secondary w-100 s-16 mt-3" data-id="${i}" data-name="murad" data-quality="0">Add to cart</button>
+                    </div>
+                </div>
+            `)
+            }
+            sessionStorage.setItem("IDshop", "murad")
+            reloadd()
+            productinfo()
+            infoproduct()
+        })
+        $(".menu3").click(function () {
+            localStorage.setItem("NamePage", "equipments")
+            sessionStorage.setItem("IDshop", "equipments")
+            $(".products .col-12:last-child").html("");
+            for (var i = 0; i < equipments.length; i++) {
+                $(`.col-12:last-child`).append(`<div class="col-sm-6 mb-3 equipmentsitem"></div>`)
+                $(`.col-12:last-child .col-sm-6:nth-child(${i + 1})`).html(`
+                    <div class="product-content d-flex flex-md-row">
+                        <div>
+                            <a class="text-center" href="./dataProducts.html" titlee="product${i}" target="_blank" data-id="${i}" data-name="equipments">
+                                <img src="${equipments[i].img}" height="100%"
+                                    alt="">
+                                    <span id="infoproduct" class="product${i} text-start"><h3>DESCRIPTION</h3> <hr> <p class="s-16"> ${equipments[i].infoproduct} </p><p class="s-16 mt-2 mb-2 fst-italic">${equipments[i].warning1} </p><p class="s-16 fst-italic"> ${equipments[i].warning2}</p></span>
+                            </a>
+                        </div>
+                        <div class="p-4 w-100 equipmentsname">
+                            <h3 class="NameProduct text-start">${equipments[i].name}</h3>
+                            <p class="d-inline-block">Price: </p><h3 class="Money text-start d-inline-block" style="color: #0d6efd;"> ${equipments[i].price}</h3>
+                            <button type="button" class="btn btn-outline-secondary w-100 s-16" data-id="${i}" data-name="equipments" data-quality="0">Add to cart</button>
+                        </div>
+                    </div>
+                `)
+            }
+            sessionStorage.setItem("IDshop", "equipments")
+            reloadd()
+            productinfo()
+            infoproduct()
+        })
+
+
+        var GuestCart = sessionStorage.getItem("GuestCart");
+        if (!GuestCart) {
+            sessionStorage.setItem("GuestCart", "");
+        }
+        function CartItem(name, id, quatity) {
+            this.name = name,
+                this.id = id,
+                this.quatity = quatity
+        }
+        // shop to cart
+        if(!localStorage.getItem("IDproducts")){
+            var IdProduct = [];
+            IdProduct = JSON.parse(localStorage.setItem("IDproducts",JSON.stringify(IdProduct)));
+        }
+        var IdProduct = JSON.parse(localStorage.getItem("IDproducts"));
+        function reloadd() {
+            $(".product-content button").click(function () {
+                var name = $(this).attr("data-name")
+                var id = $(this).attr("data-id")
+                var Cart = new CartItem(name, id, parseInt($(this).data("quality")) + 1);
+                $(this).data("quality", parseInt($(this).data("quality")) + 1)
+                // số lượng sp
+                if (!localStorage.getItem("QuatityProduct")) { localStorage.setItem("QuatityProduct", JSON.stringify(IdProduct)) }
+                localStorage.setItem("QuatityProduct", JSON.stringify(IdProduct.push(id + name)))
+                // chuỗi ID sp
+                localStorage.setItem("IDproducts", JSON.stringify(unique(IdProduct)))
+                // tạo key
+                if(name == "environs"){
+                    localStorage.setItem(id + "environs", JSON.stringify(Cart))
+                }
+                if(name == "murad"){
+                    localStorage.setItem(id + "murad", JSON.stringify(Cart))
+                }
+                if(name == "equipments"){
+                    localStorage.setItem(id + "equipments", JSON.stringify(Cart))
+                }
+                toast({
+                    title: "success",
+                    message: "Product added to cart!!",
+                    type: "success",
+                });
+                if (JSON.parse(localStorage.getItem("IDproducts"))=="") {
+                    $(".DN p").hide()
+                } else {
+                    $(".DN p").show()
+                    $(".DN p").html(JSON.parse(localStorage.getItem("IDproducts")).length)
+                }
+            })
+        }
+
+
+
+        // lọc sản phẩm trùng
+        function unique(arr) {
+            var newArr = []
+            for (var i = 0; i < arr.length; i++) {
+                if (newArr.indexOf(arr[i]) === -1) {
+                    newArr.push(arr[i])
+                }
+            }
+            return newArr
+        }
+
+
+        // product info
+        var IDshop = sessionStorage.getItem("IDshop")
+        function productinfo() {
+            $(".product-content a").click(function () {
+                localStorage.setItem("NamePage", $(this).attr('data-name'))
+                localStorage.setItem("IdPage", $(this).attr('data-id'))
+            })
+        }
+
+        // check guest cart
+
+        $(".btn-products").click(function () {
+            $(".menu-products").toggle()
+        })
+
+        $(".btn-products,.menu-products").mouseover(function () {
+            $(".menu-products").show()
+            $(this).mouseout(function () {
+                $(".menu-products").hide()
+            })
+        })
+
+        // tooltip mousemouve
+        function infoproduct() {
+            $(".product-content a").mousemove(function (e) {
+                var x = e.clientX
+                var y = e.clientY
+                var classs = $(this).attr("titlee")
+                $("." + classs).css("left", `${10 + x}px`)
+                $("." + classs).css("top", `${10 + y}px`)
+            })
+        }
+
+
+    })
+</script>
