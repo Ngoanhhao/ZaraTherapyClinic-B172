@@ -782,6 +782,7 @@ select {
   width: 90%;
   overflow: hidden;
   box-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 .service .cardd:hover {
   box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
