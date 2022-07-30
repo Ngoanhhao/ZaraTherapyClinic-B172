@@ -772,7 +772,7 @@ select {
 .service {
   margin-top: 82.2px;
   background: url(../anh_background/background_1.wide_.jpeg);
-  background-size: cover;
+  background-size: auto;
   font-family: "Pacifico", cursive;
 }
 .service > div {
