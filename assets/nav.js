@@ -18,6 +18,19 @@ $(document).ready(function(){
           <a class="nav-link active" aria-current="page" href="./index.html">home</a>
         </li>
         <li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+          data-bs-toggle="" aria-expanded="false">
+          about
+        </a>
+        <ul class="dropdown-menu dropdown-menu-third ProblemsWeTreat" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">About us</a></li>
+          <li><a class="dropdown-item" href="#">Our doctors</a></li>
+          <li><a class="dropdown-item" href="#">Our clincs</a></li>
+          <li><a class="dropdown-item" href="#">Our parteners</a></li>
+          <li><a class="dropdown-item" href="#">Join us at Chiropractor</a></li>
+        </ul>
+      </li>
+        <li class="nav-item dropdown">
           <a class="nav-link active dropdown-toggle PWT" href="#" id="navbarDropdown" role="button"
             data-bs-toggle="" aria-expanded="false">Problems we treat
           </a>
@@ -69,18 +82,8 @@ $(document).ready(function(){
 
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-            data-bs-toggle="" aria-expanded="false">
-            about
-          </a>
-          <ul class="dropdown-menu dropdown-menu-third ProblemsWeTreat" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">About us</a></li>
-            <li><a class="dropdown-item" href="#">Our doctors</a></li>
-            <li><a class="dropdown-item" href="#">Our clincs</a></li>
-            <li><a class="dropdown-item" href="#">Our parteners</a></li>
-            <li><a class="dropdown-item" href="#">Join us at Chiropractor</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./service.html">service</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="./shop.html">Products</a>
