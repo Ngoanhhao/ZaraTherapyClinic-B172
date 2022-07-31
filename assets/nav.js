@@ -103,7 +103,7 @@ $(document).ready(function(){
   </div>
   <!-- menu in mobile -->
   <div class="dark-background">
-    <div class="navs-content2">
+    <div class="navs-content2 pt-5">
       <div class="mb-4">
         <a class="ps-4" href="./index.html">
           <img src="./assets/Img/logo_new.gif" width="70%" alt="">
@@ -174,7 +174,7 @@ $(document).ready(function(){
       $(".dropdown-menu-first").slideDown("fast")
     })
 
-    
+
      // mobile menu
   $(".CustomDropdown").click(function () {
     $(this).children().toggle()
