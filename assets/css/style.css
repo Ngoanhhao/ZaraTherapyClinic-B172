@@ -417,7 +417,7 @@ ul .nav-item a:hover {
 .feedback2 .sun {
   background: url(../anh_background/sun@2x.png);
   position: absolute;
-  right: 65px;
+  right: 5%;
   top: 30px;
   background-size: cover;
   width: 175px;
@@ -449,7 +449,7 @@ ul .nav-item a:hover {
   }
 }
 .feedback2 .feedback2-title {
-  width: 600px;
+  width: 40%;
   text-align: center;
   color: white;
   position: absolute;
