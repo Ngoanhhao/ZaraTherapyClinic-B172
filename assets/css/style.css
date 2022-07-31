@@ -396,12 +396,23 @@ ul .nav-item a:hover {
   animation: zoom ease 0.2s;
   transform: scale(1.05) !important;
 }
-.Problems .cardd:hover img {
-  
+.Problems .card{
+  width: 95% !important;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
 }
-/* .Problems .cardd:hover{
-  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
-} */
+.Problems .cardd .card-body{
+  padding: 10px;
+  height: 170px !important;
+}
+.Problems .cardd .card-body p{
+  margin-top: 20px;
+}
+.Problems a,
+.Problems a:hover{
+  text-decoration: none;
+  color: black;
+}
+
 @keyframes zoom {
   from {
     transform: scale(1);
@@ -786,7 +797,7 @@ select {
 
 /* service */
 .background-service-top {
-  padding-top: 50%;
+  padding-top: 800px;
   position: relative;
   overflow: hidden;
   animation-iteration-count: infinite !important;
@@ -860,13 +871,13 @@ select {
   box-shadow: none;
   margin-bottom: 15px;
 }
-/* .open{
-  width: 100%;
-  height: 320px;
-  background: url(../anh_background/eforea-Relaxation-Room.jpg);
-  background-size: cover;
-  background-position: 50% 50%;
-} */
+.service h3{
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  width: 40% !important;
+  margin: auto;
+}
+
 /* massage */
 .massage{
   margin-top: 80px;
@@ -896,7 +907,7 @@ select {
 /* start */
 .background-start{
   margin-top: 72.2px;
-  padding-top: 45%;
+  padding-top: 800px;
   background: url("../anh_background/create_acc_bg@2x.jpg");
   background-position: 100% 0%;
 }
@@ -906,7 +917,8 @@ select {
 }
 .background-start-content{
   position: absolute;
-  top: 30%;
+  width: 50%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%) !important;
 }

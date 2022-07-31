@@ -145,9 +145,6 @@
   .feedback2-title h3{
     font-size: 3rem !important;
   }
-  .feedback2 .feedback2-title{
-    /* width: 80% !important; */
-  }
 
   /* background-top */
   .background-top a {
@@ -157,6 +154,13 @@
   /* message */
   .content-massage {
     width: 100%;
+  }
+  /* started */
+  .background-start-content h1{
+    font-size: 3rem !important;
+  }
+  .background-start-content p{
+    font-size: 2rem !important;
   }
 }
 /* <=576 */
@@ -277,12 +281,23 @@
   .feedback2 .feedback2-title{
     width: 80%;
   }
-  .feedback2 .sun{
-    /* right: 206px; */
-  }
   /* background-top */
   .background-top a {
     top: 60%;
     left: 5%;
   }
+    /* started */
+    .background-start-content h1{
+      font-size: 2.6rem !important;
+    }
+    .background-start-content p{
+      font-size: 1.8rem !important;
+    }
+    .background-start-content {
+      width: 90%;
+    }
+    /* service */
+    .service h3{
+      font-size: 2rem !important;
+    }
 }
