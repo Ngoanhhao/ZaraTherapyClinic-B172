@@ -6,32 +6,32 @@ $(document).ready(function(){
       <img src="./assets/Img/logo_new.gif" width="158px" alt="">
     </a>
     <!-- Menu list on mobile -->
-    <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
+    <button class="navbar-toggler p-3" type="button" data-bs-toggle="" data-bs-target=""
+      aria-controls="" aria-expanded="" aria-label="">
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Menu list -->
     <div class="navs-content collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="dark-background"></div>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html">home</a>
+          <a class="nav-link p-xl-2 active" aria-current="page" href="./index.html">home</a>
         </li>
         <li class="nav-item dropdown">
-        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-          data-bs-toggle="" aria-expanded="false">
-          about
-        </a>
-        <ul class="dropdown-menu dropdown-menu-third ProblemsWeTreat" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">About us</a></li>
-          <li><a class="dropdown-item" href="#">Our doctors</a></li>
-          <li><a class="dropdown-item" href="#">Our clincs</a></li>
-          <li><a class="dropdown-item" href="#">Our parteners</a></li>
-          <li><a class="dropdown-item" href="#">Join us at Chiropractor</a></li>
-        </ul>
-      </li>
+          <a class="nav-link p-xl-2 active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="" aria-expanded="false">
+            about
+          </a>
+          <ul class="dropdown-menu dropdown-menu-third ProblemsWeTreat" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">About us</a></li>
+            <li><a class="dropdown-item" href="#">Our doctors</a></li>
+            <li><a class="dropdown-item" href="#">Our clincs</a></li>
+            <li><a class="dropdown-item" href="#">Our parteners</a></li>
+            <li><a class="dropdown-item" href="#">Join us at Chiropractor</a></li>
+          </ul>
+        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle PWT" href="#" id="navbarDropdown" role="button"
+          <a class="nav-link p-xl-2 active dropdown-toggle PWT" href="#" id="navbarDropdown" role="button"
             data-bs-toggle="" aria-expanded="false">Problems we treat
           </a>
           <ul class="dropdown-menu dropdown-menu-first ProblemsWeTreat" aria-labelledby="navbarDropdown">
@@ -56,7 +56,7 @@ $(document).ready(function(){
           </ul>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+          <a class="nav-link p-xl-2 active dropdown-toggle" href="#" id="navbarDropdown" role="button"
             data-bs-toggle="" aria-expanded="false">
             Combined Therapies
           </a>
@@ -83,13 +83,13 @@ $(document).ready(function(){
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./service.html">service</a>
+          <a class="nav-link p-xl-2 active" aria-current="page" href="./service.html">service</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./shop.html">Products</a>
+          <a class="nav-link p-xl-2 active" aria-current="page" href="./shop.html">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+          <a class="nav-link p-xl-2 active" aria-current="page" href="./contact.html">Contact</a>
         </li>
       </ul>
       <!-- sign -->
@@ -99,6 +99,68 @@ $(document).ready(function(){
         </a>
         <button class="border-0 container-search_btn border-bottom s-14 m-2 signin" type="button">Sign in</button>
       </div>
+    </div>
+  </div>
+  <!-- menu in mobile -->
+  <div class="dark-background">
+    <div class="navs-content2">
+      <div class="mb-4">
+        <a class="ps-4" href="./index.html">
+          <img src="./assets/Img/logo_new.gif" width="70%" alt="">
+        </a>
+      </div>
+      <div id="close" class="s-30">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <ul class="p-0">
+        <li class="p-2 ps-4 pe-4 ">
+          <a class="nav-link p-xl-2 active" aria-current="page" href="./index.html">HOME</a>
+        </li>
+        <li class="p-2 ps-4 pe-4 CustomDropdown">ABOUT
+          <ul>
+            <li><a class="dropdown-item p-1" href="#">About us</a></li>
+            <li><a class="dropdown-item p-1" href="#">Our doctors</a></li>
+            <li><a class="dropdown-item p-1" href="#">Our clincs</a></li>
+            <li><a class="dropdown-item p-1" href="#">Our parteners</a></li>
+            <li><a class="dropdown-item p-1" href="#">Join us at Chiropractor</a></li>
+          </ul>
+        </li>
+        <li class="p-2 ps-4 pe-4 CustomDropdown">PROBLEMS WE TREAT
+          <ul>
+            <li><a class="dropdown-item p-1" href="./DiscSyndrome.html">Disc Syndrome</a></li>
+            <li><a class="dropdown-item p-1" href="./Sciatica.html">Sciatica</a></li>
+            <li><a class="dropdown-item p-1" href="./NeckPain.html">Neck Pain</a></li>
+            <li><a class="dropdown-item p-1" href="./Headaches.html">Headaches</a></li>
+            <li><a class="dropdown-item p-1" href="./foot.html">Foot Problems</a></li>
+            <li><a class="dropdown-item p-1" href="./elbow.html">Elbow Pain</a></li>
+            <li><a class="dropdown-item p-1" href="./wirst.html">Wrist Pain</a></li>
+            <li><a class="dropdown-item p-1" href="./low.html">Low back pain</a></li>
+            <li><a class="dropdown-item p-1" href="./Scoliosis.html">Scoliosis</a></li>
+            <li><a class="dropdown-item p-1" href="./knee.html">Knee Pain</a></li>
+            <li><a class="dropdown-item p-1" href="./ShoulderPain.html">Shoulder Pain</a></li>
+            <li><a class="dropdown-item p-1" href="./ankle.html">Ankle Pain</a></li>
+          </ul>
+        </li>
+        <li class="p-2 ps-4 pe-4 CustomDropdown">COMBINED THERAPIES
+          <ul>
+            <li><a class="dropdown-item p-1" href="./ChiropracticAdjustment.html">Chiropractic Adjustment</a></li>
+            <li><a class="dropdown-item p-1" href="./PneumexPneuBack.html">Pneumex PneuBack</a></li>
+            <li><a class="dropdown-item p-1" href="./ClassIVLaserTherapy.html">Class IV Laser Therapy</a></li>
+            <li><a class="dropdown-item p-1" href="./ShockWaveTherapy.html">Shockwave Therapy</a></li>
+            <li><a class="dropdown-item p-1" href="./Vertetrac.html">Vertetrac and Cervico 2000</a></li>
+            <li><a class="dropdown-item p-1" href="./FootOrthortics.html">Foot Orthotics</a></li>
+            <li><a class="dropdown-item p-1" href="./Physiotherapy.html">Physiotherapy</a></li>
+            <li><a class="dropdown-item p-1" href="./DTSDecompressionTractionTherapy.html">DTS Decompression Traction
+                Therapy</a></li>
+            <li><a class="dropdown-item p-1" href="./Manual-Therapy.html">Manual Therapy</a></li>
+            <li><a class="dropdown-item p-1" href="./Active-Therapeutic-Movement.html">Active Therapeutic Movement
+                (ATM2)</a></li>
+              </ul>
+        </li>
+      <li class="p-2 ps-4 pe-4 "><a href="./service.html">SERVICE</a></li>
+      <li class="p-2 ps-4 pe-4 "><a href="./shop.html">PRODUCTS</a></li>
+      <li class="p-2 ps-4 pe-4 "><a href="./contact.html">CONTACT</a></li>
+      </ul>
     </div>
   </div>
     `)
@@ -111,4 +173,22 @@ $(document).ready(function(){
     $(".PWT").mouseover(function(){
       $(".dropdown-menu-first").slideDown("fast")
     })
+
+    
+     // mobile menu
+  $(".CustomDropdown").click(function () {
+    $(this).children().toggle()
+  })
+  $("#close").click(function(){
+    $(".dark-background").toggle()
+  })
+  $(".dark-background").click(function(){
+    $(".dark-background").toggle()
+  })
+  $(".navs-content2").click(function(e){
+    e.stopPropagation()
+  })
+  $(".navbar-toggler").click(function () {
+    $(".dark-background").show()
+  })
 })

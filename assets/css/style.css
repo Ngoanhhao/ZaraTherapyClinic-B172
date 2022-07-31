@@ -92,7 +92,6 @@ ul .nav-item:hover {
 ul .nav-item a:hover {
   opacity: 0.7;
 }
-
 .dropdown-menu .dropdown-item {
   font-size: 1.6rem;
   text-transform: none;
@@ -149,6 +148,54 @@ ul .nav-item a:hover {
   background-color: white;
   color: rgba(14, 14, 14, 0.5);
 }
+/* nav mobile */
+
+.dark-background{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(14, 14, 14, 0.3);
+  display: none;
+}
+.dark-background ul li{
+  list-style-type: none;
+  font-size: 1.6rem;
+}
+.dark-background ul li ul{
+  display: none;
+}
+.dark-background a{
+  text-decoration: none;
+  color: black;
+}
+.dark-background .logo-mobile{
+  width: 40%;
+}
+.dark-background #close{
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  color: #6c757d;
+}
+.dark-background #close:hover{
+  cursor: pointer;
+}
+.dark-background ul li:hover{
+  cursor: pointer;
+  color: #0d6efd;
+}
+.navs-content2{
+  position: absolute;
+  animation: RtL ease 0.5s;
+  background: white;
+  right: 0;
+  width: 250px;
+  height: 100%;
+}
+
+
 
 /* singin */
 

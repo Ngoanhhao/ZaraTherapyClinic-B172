@@ -28,6 +28,7 @@
 <body class="scroll">
   <!-- NAV -->
   <nav class="navbar navbar-expand-xl bg-white">
+  
 
   </nav>
 
@@ -42,7 +43,8 @@
             complete happiness toolbox. Get matched with a qualified therapist within a minute.</p>
         </div>
         <div class="btn-start">
-          <a type="button" href="./started.html" data-aos="fadeOut" class="btn btn-outline-info s-24 p-4 pe-5 ps-5 text-white">GET STARTED</a>
+          <a type="button" href="./started.html" data-aos="fadeOut"
+            class="btn btn-outline-info s-24 p-4 pe-5 ps-5 text-white">GET STARTED</a>
         </div>
       </div>
     </div>
@@ -186,7 +188,7 @@
         <h1 class="text-center mt-5 mb-5 s-30">Problems We Treat</h1>
       </div>
       <div class="container pt-2 pb-2">
-        <div class="row justify-content-around w-100 Problems">
+        <div class="row justify-content-around w-100 Problems m-auto">
           <div class="col-xl-3 col-md-6 d-flex mt-3 mb-3 justify-content-center cardd" data-aos="fade-up">
             <div class="card border-0" style="width: 100%;">
               <img src="assets/Img/problems/thoat-vi-dia-dem-1.jpg" class="card-img-top" alt="...">
@@ -363,7 +365,8 @@
       <div class="sun"></div>
       <div class="feedback2-title">
         <h3 class="">We’ve helped thousands become happier since 2009!</h3>
-        <p class="feedback2-content s-20 fst-italic m-0">"I love the fact that I get feedback on the worksheets every day,
+        <p class="feedback2-content s-20 fst-italic m-0">"I love the fact that I get feedback on the worksheets every
+          day,
           sometimes several times a day. I prefer the
           online therapy to a traditional therapy, because you don't have to wait for feedback." Chris C</p>
       </div>
@@ -504,23 +507,27 @@
     })
   })
   // feedback2
-  // autoreloadcontent()
+  autoreloadcontent()
   function autoreloadcontent() {
     $(".feedback2-content").hide()
-      $(".feedback2-content").fadeIn()
+    $(".feedback2-content").fadeIn()
     $(".feedback2-content").text(`"I'm really being helped by this program and by my therapist, Maggie Sweet. I must thank you sincerely for being here for me. I think enrolling for this therapy has been one of the best things I have ever done." Kim R`)
-    setTimeout(function(){
+    setTimeout(function () {
       $(".feedback2-content").hide()
       $(".feedback2-content").fadeIn()
       $(".feedback2-content").text(`"I love the fact that I get feedback on the worksheets every day, sometimes several times a day. I prefer the online therapy to a traditional therapy, because you don't have to wait for feedback." Chris C`)
-    },4000)
-    setTimeout(function(){
+    }, 4000)
+    setTimeout(function () {
       $(".feedback2-content").hide()
       $(".feedback2-content").fadeIn()
       $(".feedback2-content").text(`""I cannot believe the results the course has had with me - it's brilliant. The worksheets are difficult, but the way they guide you through to an alternative way of thinking is extraordinary." Susie`)
-    },8000)
-    setTimeout(function(){autoreloadcontent()},12000);
+    }, 8000)
+    setTimeout(function () { autoreloadcontent() }, 12000);
 
   }
+
+
+
+ 
 
 </script>
