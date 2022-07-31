@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 
   $(".footer").html(`
-  <div class="d-flex pt-5 pb-5 row justify-content-around text-md-center">
+  <div class="d-flex pt-5 pb-5 row w-100 justify-content-around text-md-center">
   
     <div class="footer-content col-xl-3 col-lg-6 col-md-6 p-4">
       <img width="50%" src="assets/Img/logov2.png" alt="">
