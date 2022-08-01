@@ -393,8 +393,9 @@ ul .nav-item a:hover {
   width: 20%;
 }
 .Problems .cardd:hover{
-  animation: zoom ease 0.2s;
   transform: scale(1.05) !important;
+  transition-delay: 0s !important;
+  transition-duration: 0.5s !important;
 }
 .Problems .card{
   width: 95% !important;
@@ -802,15 +803,15 @@ select {
   overflow: hidden;
   animation-iteration-count: infinite !important;
 }
-.img1 {
+.img01 {
   background: url(../anh_background/slide1-bg.jpg);
   background-size: cover;
 }
-.img2 {
+.img02 {
   background: url(../anh_background/slide2-bg.jpg);
   background-size: cover;
 }
-.img3 {
+.img03 {
   background: url(../anh_background/slider_3.jpg);
   background-size: cover;
 }
@@ -844,8 +845,10 @@ select {
 }
 .service .cardd:hover {
   box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
-  animation: zoom ease 1s !important;
+  /* animation: zoom ease 1s !important; */
   transform: scale(1.05) !important;
+  transition-delay: 0s !important;
+  transition-duration: 0.5s !important;
 }
 .service .cardd img {
   background: rgba(255, 255, 255, 0.3);
