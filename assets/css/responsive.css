@@ -32,6 +32,13 @@
     width: 100%;
     font-size: 18px;
   }
+  /* about */
+  .about p{
+    font-size: 1.6rem !important;
+  }
+  .about h1:not(.about div:first-child h1:first-child){
+    font-size: 2rem !important;
+  }
   /* shop equipment*/
   .equipmentsitem {
     width: 75%;
@@ -299,5 +306,9 @@
     /* service */
     .service h3{
       font-size: 2rem !important;
+    }
+    /* about */
+    .about div:first-child{
+      width: 100% !important;
     }
 }

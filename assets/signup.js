@@ -37,7 +37,7 @@ $(document).ready(function () {
       </div>
 
       <div class="birthday d-flex mt-3 justify-content-around w-100">
-        <label>Birthday</label>
+        <label>Birth date</label>
         <input type="date" id="birthday" class="border-0" value="2000-01-01" name="birthday">
       </div>
 

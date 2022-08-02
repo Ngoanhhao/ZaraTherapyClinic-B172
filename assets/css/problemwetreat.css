@@ -72,7 +72,9 @@
 .bodytop-background-activetherapeuticmovement{
     background-image: url("../anh_background/thiet-bi-tri-lieu-atm2-mobile.jpg");
 }
-
+.bodytop-background-aboutus{
+    background-image: url("../Img/about/banner-about-us.jpeg");
+}
 
 
 .discsyndrome

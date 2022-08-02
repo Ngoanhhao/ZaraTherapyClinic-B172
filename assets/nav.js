@@ -17,18 +17,10 @@ $(document).ready(function(){
         <li class="nav-item">
           <a class="nav-link p-xl-2 active" aria-current="page" href="./index.html">home</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link p-xl-2 active dropdown-toggle" href="#" id="navbarDropdown" role="button"
-            data-bs-toggle="" aria-expanded="false">
-            about
+        <li class="nav-item">
+          <a class="nav-link p-xl-2 active" href="./aboutus.html">
+            about us
           </a>
-          <ul class="dropdown-menu dropdown-menu-third ProblemsWeTreat" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">About us</a></li>
-            <li><a class="dropdown-item" href="#">Our doctors</a></li>
-            <li><a class="dropdown-item" href="#">Our clincs</a></li>
-            <li><a class="dropdown-item" href="#">Our parteners</a></li>
-            <li><a class="dropdown-item" href="#">Join us at Chiropractor</a></li>
-          </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link p-xl-2 active dropdown-toggle PWT" href="#" id="navbarDropdown" role="button"
@@ -116,14 +108,10 @@ $(document).ready(function(){
         <li class="p-2 ps-4 pe-4 ">
           <a class="nav-link p-xl-2 active" aria-current="page" href="./index.html">HOME</a>
         </li>
-        <li class="p-2 ps-4 pe-4 CustomDropdown">ABOUT
-          <ul>
-            <li><a class="dropdown-item p-1" href="#">About us</a></li>
-            <li><a class="dropdown-item p-1" href="#">Our doctors</a></li>
-            <li><a class="dropdown-item p-1" href="#">Our clincs</a></li>
-            <li><a class="dropdown-item p-1" href="#">Our parteners</a></li>
-            <li><a class="dropdown-item p-1" href="#">Join us at Chiropractor</a></li>
-          </ul>
+        <li class="p-2 ps-4 pe-4">
+        <a class="nav-link p-xl-2 active" href="./aboutus.html">
+        ABOUT US
+      </a>
         </li>
         <li class="p-2 ps-4 pe-4 CustomDropdown">PROBLEMS WE TREAT
           <ul>
@@ -161,6 +149,13 @@ $(document).ready(function(){
       <li class="p-2 ps-4 pe-4 "><a href="./shop.html">PRODUCTS</a></li>
       <li class="p-2 ps-4 pe-4 "><a href="./contact.html">CONTACT</a></li>
       </ul>
+
+      <div class="d-flex DN DN-mobile justify-content-end p-3" role="search" method="">
+        <a href="./cart.html"><i class="fa-solid fa-cart-shopping s-18"></i>
+          <p>0</p>
+        </a>
+        <button class="border-0 container-search_btn border-bottom s-14 m-2 signin" type="button">Sign in</button>
+      </div>
     </div>
   </div>
     `)
