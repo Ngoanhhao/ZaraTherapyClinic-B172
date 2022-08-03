@@ -845,6 +845,7 @@ select {
   background-size: auto;
   font-family: "Pacifico", cursive;
 }
+
 .service > div {
   max-width: 1100px;
 }
@@ -853,6 +854,8 @@ select {
   overflow: hidden;
   box-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  position: relative;
+
 }
 .service .cardd:hover {
   box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
@@ -861,6 +864,25 @@ select {
   transition-delay: 0s !important;
   transition-duration: 0.5s !important;
 }
+.service .cardd::after{
+  position: absolute;
+  top: 0;
+  left: -80%;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 42556, 255, 0)), to(rgba(255, 255, 255, .3)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  -webkit-transform: skewX(-25deg);
+  -ms-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+  z-index: 200;
+}
+.service .cardd:hover .service .cardd::after{
+  animation: shine ease 1s;
+}
+
 .service .cardd img {
   background: rgba(255, 255, 255, 0.3);
   height: 215px;
@@ -891,6 +913,7 @@ select {
   width: 40% !important;
   margin: auto;
 }
+
 
 /* massage */
 .massage{
@@ -1030,5 +1053,16 @@ select {
   }
   to {
     transform: translateX(10px);
+  }
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes shine {
+  100% {
+      left: 125%;
   }
 }
