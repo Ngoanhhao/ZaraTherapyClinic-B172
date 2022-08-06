@@ -223,9 +223,9 @@
     font-size: 1.8rem !important;
     margin-top: 0%;
   }
-  .index-body-top .feedback .d-flex div {
+  /* .index-body-top .feedback .d-flex div {
     margin: 0 !important;
-  }
+  } */
   .index-body-top .feedback {
     flex-direction: row !important;
   }
@@ -385,14 +385,14 @@
   }
   .index-body-top .doctors .doctor-img {
     height: 200px !important;
-    border-top-right-radius: 120px !important;
-    border-bottom-left-radius: 120px !important;
+    border-top-right-radius: 100px !important;
+    border-bottom-left-radius: 100px !important;
     border-bottom-right-radius: 0px !important;
   }
   .index-body-top .doctors .background-doctors {
     height: 700px !important;
-    border-top-right-radius: 150px !important;
-    border-bottom-left-radius: 150px !important;
+    border-top-right-radius: 110px !important;
+    border-bottom-left-radius: 110px !important;
   }
   .index-body-top .background-doctors .item div:first-child:not(.index-body-top .background-doctors .doctor-img) {
     padding: 30px !important;
