@@ -455,6 +455,11 @@ ul .nav-item a:hover {
   height: auto !important;
 }
 
+.index-body-top .problem-background a{
+  text-decoration: none;
+  color: black;
+}
+
 .problems-carousel {
   border-radius: 120px;
   overflow: hidden;

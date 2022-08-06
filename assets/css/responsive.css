@@ -1,6 +1,5 @@
 /* <=1200px */
 @media only screen and (max-width: 1200px) {
-  
 }
 /* <992px */
 @media only screen and (max-width: 992px) {
@@ -33,10 +32,10 @@
     font-size: 18px;
   }
   /* about */
-  .about p{
+  .about p {
     font-size: 1.6rem !important;
   }
-  .about h1:not(.about div:first-child h1:first-child){
+  .about h1:not(.about div:first-child h1:first-child) {
     font-size: 2rem !important;
   }
   /* shop equipment*/
@@ -60,37 +59,37 @@
     width: 100% !important;
   }
   /* feedback2 */
-  .feedback2 .feedback2-title{
+  .feedback2 .feedback2-title {
     width: 60%;
   }
   /* index */
-  .index-body-top .doctors .doctor-content p{
+  .index-body-top .doctors .doctor-content p {
     font-size: 1.6rem;
   }
-  .index-body-top .doctors .doctor-img{
+  .index-body-top .doctors .doctor-img {
     width: 250px !important;
     height: 250px !important;
   }
-  .index-body-top .doctors .doctor-img img{
+  .index-body-top .doctors .doctor-img img {
     margin-left: 0% !important;
   }
-  .index-body-top .index-content{
+  .index-body-top .index-content {
     top: 38% !important;
     left: 28% !important;
   }
-  .index-body-top .index-body-top-container{
+  .index-body-top .index-body-top-container {
     height: 1000px !important;
   }
-  .index-body-top  .doctors .container{
+  .index-body-top .doctors .container {
     max-width: 95% !important;
   }
-  .index-body-top .doctors .doctor-content{
+  .index-body-top .doctors .doctor-content {
     margin-right: -1% !important;
   }
-  .index-body-top .doctor-content p{
+  .index-body-top .doctor-content p {
     width: 75% !important;
   }
-  .index-body-top .problem-background .problem-img{
+  .index-body-top .problem-background .problem-img {
     width: 90% !important;
     margin-top: 30px !important;
   }
@@ -176,7 +175,7 @@
     /* width: 80% !important; */
     margin: auto;
   }
-  .feedback2-title h3{
+  .feedback2-title h3 {
     font-size: 3rem !important;
   }
 
@@ -190,45 +189,44 @@
     width: 100%;
   }
   /* started */
-  .background-start-content h1{
+  .background-start-content h1 {
     font-size: 3rem !important;
   }
-  .background-start-content p{
+  .background-start-content p {
     font-size: 2rem !important;
   }
   /* index */
-  .index-body-top .index-content{
+  .index-body-top .index-content {
     top: 40% !important;
     left: 5% !important;
   }
-  .index-body-top .doctors .background-doctors{
+  .index-body-top .doctors .background-doctors {
     height: 800px !important;
     width: 90% !important;
     margin: auto !important;
     border-top-right-radius: 170px !important;
     border-bottom-left-radius: 170px !important;
     border-bottom-right-radius: 0px !important;
-
   }
-  .index-body-top .doctors .doctor-img img{
+  .index-body-top .doctors .doctor-img img {
     height: 100% !important;
     margin-left: 20px !important;
   }
-  .index-body-top .doctors .doctor-img{
+  .index-body-top .doctors .doctor-img {
     width: 85% !important;
     height: 350px !important;
     border-top-right-radius: 150px !important;
     border-bottom-left-radius: 150px !important;
     border-bottom-right-radius: 0px !important;
   }
-  .index-body-top .doctors .doctor-content p{
+  .index-body-top .doctors .doctor-content p {
     font-size: 1.8rem !important;
     margin-top: 0%;
   }
-  .index-body-top  .feedback .d-flex div {
+  .index-body-top .feedback .d-flex div {
     margin: 0 !important;
   }
-  .index-body-top .feedback{
+  .index-body-top .feedback {
     flex-direction: row !important;
   }
 }
@@ -347,7 +345,7 @@
     /* width: 50%; */
     margin: auto;
   }
-  .feedback2 .feedback2-title{
+  .feedback2 .feedback2-title {
     width: 80%;
   }
   /* background-top */
@@ -355,32 +353,34 @@
     top: 60%;
     left: 5%;
   }
-    /* started */
-    .background-start-content h1{
-      font-size: 2.6rem !important;
-    }
-    .background-start-content p{
-      font-size: 1.8rem !important;
-    }
-    .background-start-content {
-      width: 90%;
-    }
-    /* service */
-    .service h3{
-      font-size: 2rem !important;
-    }
-    /* about */
-    .about div:first-child{
-      width: 100% !important;
-    }
-    /* index */
-    .index-body-top .index-body-top-container {
-      height: 1200px !important;
-    }
-    .index-body-top .index-content {
-      top: 55% !important;
+  /* started */
+  .background-start-content h1 {
+    font-size: 2.6rem !important;
   }
-  .index-body-top .slider-doctor div:first-child:not(.index-body-top .doctors .doctor-img){
+  .background-start-content p {
+    font-size: 1.8rem !important;
+  }
+  .background-start-content {
+    width: 90%;
+  }
+  /* service */
+  .service h3 {
+    font-size: 2rem !important;
+  }
+  /* about */
+  .about div:first-child {
+    width: 100% !important;
+  }
+  /* index */
+  .index-body-top .index-body-top-container {
+    height: 1200px !important;
+  }
+  .index-body-top .index-content {
+    top: 55% !important;
+  }
+  .index-body-top
+    .slider-doctor
+    div:first-child:not(.index-body-top .doctors .doctor-img) {
     padding: 30px !important;
   }
   .index-body-top .doctors .doctor-img {
@@ -394,34 +394,43 @@
     border-top-right-radius: 150px !important;
     border-bottom-left-radius: 150px !important;
   }
+  .index-body-top .background-doctors .item div:first-child:not(.index-body-top .background-doctors .doctor-img) {
+    padding: 30px !important;
+  }
+  .index-body-top .doctors .doctor-img img{
+    margin-left: 0% !important;
+  }
   .index-body-top .feedback img {
     width: 30% !important;
     padding-top: 50px;
     margin-top: 0% !important;
-}
-.index-body-top .feedback .feedback-background01{
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-}
-.index-body-top .feedback .feedback-background02{
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-}
-.index-body-top .feedback .feedback-background01,
-.index-body-top .feedback .feedback-background02{
-  height: auto;
-}
+  }
+  .index-body-top .doctors .doctor-img img {
+    margin-left: 0%;
+  }
+  .index-body-top .feedback .feedback-background01 {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+  .index-body-top .feedback .feedback-background02 {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+  .index-body-top .feedback .feedback-background01,
+  .index-body-top .feedback .feedback-background02 {
+    height: auto;
+  }
 
-.index-body-top .feedback .feedback-background01 div:last-child,
-.index-body-top .feedback .feedback-background02 div:last-child{
-  padding: 0% !important;
-  padding-bottom: 60px !important;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-}
-.index-body-top .background-top .btn-start a {
-  top: 65%;
-}
+  .index-body-top .feedback .feedback-background01 div:last-child,
+  .index-body-top .feedback .feedback-background02 div:last-child {
+    padding: 0% !important;
+    padding-bottom: 60px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .index-body-top .background-top .btn-start a {
+    top: 65%;
+  }
 }
