@@ -1,9 +1,9 @@
 /* <=1200px */
 @media only screen and (max-width: 1200px) {
-
+  
 }
-/* <1024px */
-@media only screen and (max-width: 1024px) {
+/* <992px */
+@media only screen and (max-width: 992px) {
   #carouselExampleIndicators {
     width: 95%;
   }
@@ -63,6 +63,37 @@
   .feedback2 .feedback2-title{
     width: 60%;
   }
+  /* index */
+  .index-body-top .doctors .doctor-content p{
+    font-size: 1.6rem;
+  }
+  .index-body-top .doctors .doctor-img{
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .index-body-top .doctors .doctor-img img{
+    margin-left: 0% !important;
+  }
+  .index-body-top .index-content{
+    top: 38% !important;
+    left: 28% !important;
+  }
+  .index-body-top .index-body-top-container{
+    height: 1000px !important;
+  }
+  .index-body-top  .doctors .container{
+    max-width: 95% !important;
+  }
+  .index-body-top .doctors .doctor-content{
+    margin-right: -1% !important;
+  }
+  .index-body-top .doctor-content p{
+    width: 75% !important;
+  }
+  .index-body-top .problem-background .problem-img{
+    width: 90% !important;
+    margin-top: 30px !important;
+  }
 }
 /* <768*/
 @media only screen and (max-width: 767px) {
@@ -71,9 +102,6 @@
   }
   .cardd a {
     font-size: 1.6rem;
-  }
-  .background-top {
-    padding-top: 80% !important;
   }
   .carousel-item div {
     flex-direction: column;
@@ -124,11 +152,10 @@
     width: 100% !important;
   }
   /* feedback */
-  .feedback .d-flex {
+  /* .feedback .d-flex {
     flex-direction: column;
-  }
+  } */
   .feedback .d-flex div {
-    width: 80%;
     margin: 0% auto;
   }
   /* footer */
@@ -168,6 +195,41 @@
   }
   .background-start-content p{
     font-size: 2rem !important;
+  }
+  /* index */
+  .index-body-top .index-content{
+    top: 40% !important;
+    left: 5% !important;
+  }
+  .index-body-top .doctors .background-doctors{
+    height: 800px !important;
+    width: 90% !important;
+    margin: auto !important;
+    border-top-right-radius: 170px !important;
+    border-bottom-left-radius: 170px !important;
+    border-bottom-right-radius: 0px !important;
+
+  }
+  .index-body-top .doctors .doctor-img img{
+    height: 100% !important;
+    margin-left: 20px !important;
+  }
+  .index-body-top .doctors .doctor-img{
+    width: 85% !important;
+    height: 350px !important;
+    border-top-right-radius: 150px !important;
+    border-bottom-left-radius: 150px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+  .index-body-top .doctors .doctor-content p{
+    font-size: 1.8rem !important;
+    margin-top: 0%;
+  }
+  .index-body-top  .feedback .d-flex div {
+    margin: 0 !important;
+  }
+  .index-body-top .feedback{
+    flex-direction: row !important;
   }
 }
 /* <=576 */
@@ -311,4 +373,55 @@
     .about div:first-child{
       width: 100% !important;
     }
+    /* index */
+    .index-body-top .index-body-top-container {
+      height: 1200px !important;
+    }
+    .index-body-top .index-content {
+      top: 55% !important;
+  }
+  .index-body-top .slider-doctor div:first-child:not(.index-body-top .doctors .doctor-img){
+    padding: 30px !important;
+  }
+  .index-body-top .doctors .doctor-img {
+    height: 200px !important;
+    border-top-right-radius: 120px !important;
+    border-bottom-left-radius: 120px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+  .index-body-top .doctors .background-doctors {
+    height: 700px !important;
+    border-top-right-radius: 150px !important;
+    border-bottom-left-radius: 150px !important;
+  }
+  .index-body-top .feedback img {
+    width: 30% !important;
+    padding-top: 50px;
+    margin-top: 0% !important;
+}
+.index-body-top .feedback .feedback-background01{
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.index-body-top .feedback .feedback-background02{
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.index-body-top .feedback .feedback-background01,
+.index-body-top .feedback .feedback-background02{
+  height: auto;
+}
+
+.index-body-top .feedback .feedback-background01 div:last-child,
+.index-body-top .feedback .feedback-background02 div:last-child{
+  padding: 0% !important;
+  padding-bottom: 60px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.index-body-top .background-top .btn-start a {
+  top: 65%;
+}
 }
