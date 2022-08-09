@@ -433,11 +433,10 @@ ul .nav-item a:hover {
 }
 
 .index-body-top .doctors .doctor-content {
-  /* margin-left: auto;
-  margin-right: 6%;
-  padding-top: 55px; */
   text-align: justify;
   color: white;
+
+  
 }
 
 .index-body-top .doctors .doctor-back:hover,

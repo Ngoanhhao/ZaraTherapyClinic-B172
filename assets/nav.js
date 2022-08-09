@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     $(".navbar").html(`
     <div class="navs container-fluid s-16">
@@ -93,6 +94,9 @@ $(document).ready(function(){
       </div>
     </div>
   </div>
+
+
+
   <!-- menu in mobile -->
   <div class="dark-background">
     <div class="navs-content2 pt-5">
@@ -113,7 +117,7 @@ $(document).ready(function(){
         ABOUT US
       </a>
         </li>
-        <li class="p-2 ps-4 pe-4 CustomDropdown">PROBLEMS WE TREAT
+        <li class="p-2 ps-4 pe-4 CustomDropdown position-relative">PROBLEMS WE TREAT <i class="fa-solid fa-caret-down ps-auto position-absolute d-block" style="right: 20px;top: 10px;"></i>
           <ul>
             <li><a class="dropdown-item p-1" href="./DiscSyndrome.html">Disc Syndrome</a></li>
             <li><a class="dropdown-item p-1" href="./Sciatica.html">Sciatica</a></li>
@@ -129,7 +133,7 @@ $(document).ready(function(){
             <li><a class="dropdown-item p-1" href="./ankle.html">Ankle Pain</a></li>
           </ul>
         </li>
-        <li class="p-2 ps-4 pe-4 CustomDropdown">COMBINED THERAPIES
+        <li class="p-2 ps-4 pe-4 CustomDropdown position-relative">COMBINED THERAPIES <i class="fa-solid fa-caret-down position-absolute d-block" style="right: 20px;top: 10px;"></i>
           <ul>
             <li><a class="dropdown-item p-1" href="./ChiropracticAdjustment.html">Chiropractic Adjustment</a></li>
             <li><a class="dropdown-item p-1" href="./PneumexPneuBack.html">Pneumex PneuBack</a></li>
@@ -173,6 +177,13 @@ $(document).ready(function(){
      // mobile menu
   $(".CustomDropdown").click(function () {
     $(this).children().toggle()
+    console.log($(this).children("i").css("transform"))
+    if($(this).children("i").css("transform") == "none" || $(this).children("i").css("transform")=="matrix(1, 0, 0, 1, 0, 0)"){
+      $(this).children("i").css("transition-duration","0.5s")
+      $(this).children("i").css("transform","rotate(90deg)")
+    }else{
+      $(this).children("i").css("transform","rotate(0deg)")
+    }
   })
   $("#close").click(function(){
     $(".dark-background").toggle()
