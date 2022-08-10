@@ -179,6 +179,8 @@ $(document).ready(function () {
     $('div [data-aos="flip-right"]').removeAttr("data-aos");
     $('div [data-aos="slide-right"]').removeAttr("data-aos");
     $('div [data-aos="zoom-in"]').removeAttr("data-aos");
+    $('div [data-aos="fade-right"]').removeAttr("data-aos");
+    $('div [data-aos="zoom-in-left"]').removeAttr("data-aos");
   }
 
   //scroll top
