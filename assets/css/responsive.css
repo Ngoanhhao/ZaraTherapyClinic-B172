@@ -385,14 +385,14 @@
   }
   .index-body-top .doctors .doctor-img {
     height: 200px !important;
-    border-top-right-radius: 100px !important;
-    border-bottom-left-radius: 100px !important;
+    border-top-right-radius: 70px !important;
+    border-bottom-left-radius: 70px !important;
     border-bottom-right-radius: 0px !important;
   }
   .index-body-top .doctors .background-doctors {
     height: 630px !important;
-    border-top-right-radius: 110px !important;
-    border-bottom-left-radius: 110px !important;
+    border-top-right-radius: 70px !important;
+    border-bottom-left-radius: 70px !important;
   }
   .index-body-top .background-doctors .item div:first-child:not(.index-body-top .background-doctors .doctor-img) {
     padding: 30px !important;
@@ -432,5 +432,11 @@
   }
   .index-body-top .background-top .btn-start a {
     top: 65%;
+  }
+  .index-body-top .problem-background{
+    border-radius: 50px;
+  }
+  .index-body-top .problem-background .problem-img{
+    border-radius: 50px;
   }
 }

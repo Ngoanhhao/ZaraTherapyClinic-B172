@@ -356,7 +356,7 @@ ul .nav-item a:hover {
 .index-body-top .background-top {
   background: #1EA79B !important;
   border-bottom-left-radius: 180px;
-  padding-top: 450px;
+  padding-top: 600px;
 }
 
 .index-body-top .background-content {
@@ -435,8 +435,6 @@ ul .nav-item a:hover {
 .index-body-top .doctors .doctor-content {
   text-align: justify;
   color: white;
-
-  
 }
 
 .index-body-top .doctors .doctor-back:hover,
