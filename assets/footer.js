@@ -18,7 +18,7 @@ $(document).ready(function () {
     var day  = day  + "-" + month   + "-" + year
 
     $(".copyright").html(`
-      ${time}<br>Today is: ${day} <br> © Copyright 2022 - ZaraTherapyClinic
+      Today is: ${day} | ${time} <br> © Copyright 2022 - ZaraTherapyClinic
     `)
     setTimeout(function(){timer()},1000);
   }
@@ -60,7 +60,14 @@ $(document).ready(function () {
       <br>
       <h4 class="d-inline-block s-14 fw-bold">Online: </h4>
       <span class="d-inline-block count s-14" id="number2">569</span>
-      <p class="s-12 copyright"><br>Today is: <br> © Copyright 2022 - ZaraTherapyClinic</p>
+      <p class="s-12 copyright" style="
+        width: 100%;
+        display: block;
+        background: white;
+        text-align: center;
+        padding-top: 5px;
+        opacity: 0.6;
+      "><br>Today is: <br> © Copyright 2022 - ZaraTherapyClinic</p>
     </div>
   </div>
     `);
