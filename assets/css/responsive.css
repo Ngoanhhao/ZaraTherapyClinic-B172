@@ -74,7 +74,7 @@
     margin-left: 0% !important;
   }
   .index-body-top .index-content {
-    top: 38% !important;
+    top: 45% !important;
     left: 28% !important;
   }
   .index-body-top .index-body-top-container {
@@ -92,6 +92,9 @@
   .index-body-top .problem-background .problem-img {
     width: 90% !important;
     margin-top: 30px !important;
+  }
+  .index-body-top .background-top .btn-start a {
+    left: 80px;
   }
 }
 /* <768*/
@@ -197,7 +200,7 @@
   }
   /* index */
   .index-body-top .index-content {
-    top: 40% !important;
+    top: 50% !important;
     left: 5% !important;
   }
   .index-body-top .doctors .background-doctors {
@@ -232,9 +235,9 @@
 }
 /* <=576 */
 @media only screen and (max-width: 576px) {
-  .background-top {
+  /* .background-top {
     padding-top: 195% !important;
-  }
+  } */
   .background-content .background-text {
     width: 80%;
     font-size: 20px;
@@ -431,7 +434,7 @@
     padding-right: 10px !important;
   }
   .index-body-top .background-top .btn-start a {
-    top: 65%;
+    top: 75%;
   }
   .index-body-top .problem-background{
     border-radius: 50px;
