@@ -72,7 +72,7 @@
                             <td>
                                 <p class="s-16">250$</p>
                                 <div class="text-end p-20 pe-5">
-                                    <i class="fa-solid fa-circle-xmark s-18 w-auto" id="close"></i>
+                                    <i class="fa-solid fa-circle-xmark s-18 w-auto" id="close1"></i>
                                 </div>
                             </td>
                         </tr> -->
@@ -139,7 +139,7 @@
                                     <p class="s-16 total-mb d-sm-none" data-price="" id="" data-quantity-item=""></p>
                                 </div>
                                 <div class="text-end p-20 pe-md-4 pe-sm-1 d-sm-none close-mb">
-                                    <p class=" s-14 w-auto" id="close" data-remove="">Remove</p>
+                                    <p class=" s-14 w-auto" id="close1" data-remove="">Remove</p>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +157,7 @@
                     <td>
                         <p class="s-16" data-price="" id="" data-quantity-item=""></p>
                         <div class="text-end p-20 pe-md-4 pe-sm-1">
-                            <i class="fa-solid fa-circle-xmark s-18 w-auto" id="close" data-remove=""></i>
+                            <i class="fa-solid fa-circle-xmark s-18 w-auto" id="close1" data-remove=""></i>
                         </div>
                     </td>
             `)
@@ -223,8 +223,16 @@
 
         // xác nhận mua sản phẩm
         $(".proceed").click(function () {
-            location.reload()
-            localStorage.clear()
+            // checklogin
+            if ((localStorage.getItem("login")) == null) {
+                $(".register2").css("animation", "");
+                $(".signupp").css("animation", "");
+                $(".register").css("animation", "");
+                $(".background-signup").css("display", "flex");
+            }else{
+                location.reload()
+                localStorage.clear()
+            }
         })
 
         // quatity
@@ -243,7 +251,7 @@
             $("#" + id).text(newp.quatity * parseInt($("#" + id).data("price")) + "$");
             // add total money cho giao diện mb
             $("." + id).text(newp.quatity * parseInt($("#" + id).data("price")) + "$");
-            
+
             // repair total bill
             repairTotalbill()
         })
@@ -273,12 +281,13 @@
         }
 
         // remove
-        $("tr td:last-child i, tr td:first-child p[id='close']").click(function () {
+        $("tr td:last-child i, tr td:first-child p[id='close1']").click(function () {
             let dataremove = $(this).attr("data-remove")
             let newIDproducts = IDproducts.filter(item => item != dataremove)
             localStorage.setItem("IDproducts", JSON.stringify(newIDproducts))
             location.reload()
         })
+
     })
 
 

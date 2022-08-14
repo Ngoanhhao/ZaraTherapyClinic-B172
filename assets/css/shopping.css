@@ -269,18 +269,18 @@
 }
 .cart-item table tr td p,
 .cart-item table tr td .btn-group,
-#close{
+#close1{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
 }
-.cart-item #close{
+.cart-item #close1{
     color: black;
     opacity: 0.4;
 }
-.cart-item #close:hover{
+.cart-item #close1:hover{
     cursor: pointer;
     opacity: 0.6;
 }

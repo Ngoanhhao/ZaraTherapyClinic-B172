@@ -65,11 +65,9 @@ $(document).ready(function(){
               <div>
                 <li><a class="dropdown-item" href="./FootOrthortics.html">Foot Orthotics</a></li>
                 <li><a class="dropdown-item" href="./Physiotherapy.html">Physiotherapy</a></li>
-                <li><a class="dropdown-item" href="./DTSDecompressionTractionTherapy.html">DTS Decompression Traction
-                    Therapy</a></li>
+                <li><a class="dropdown-item" href="./DTSDecompressionTractionTherapy.html">DTS Decompression Traction Therapy</a></li>
                 <li><a class="dropdown-item" href="./Manual-Therapy.html">Manual Therapy</a></li>
-                <li><a class="dropdown-item" href="./Active-Therapeutic-Movement.html">Active Therapeutic Movement
-                    (ATM2)</a></li>
+                <li><a class="dropdown-item" href="./Active-Therapeutic-Movement.html">Active Therapeutic Movement (ATM2)</a></li>
               </div>
             </div>
 
