@@ -457,7 +457,7 @@
   for (var i = 0; i < doctors.length; i++) {
     $(".doctors .doctors-carousel").append(`<div class="item d-flex row"></div>`)
     $(`.doctors .doctors-carousel .item:nth-child(${i + 1})`).html(`
-              <div class="col-md-4 col-12 pe-md-0 d-flex justify-content-center" style="padding: 50px;">
+              <div class="col-md-4 col-12 d-flex justify-content-center doctor-img-container" style="padding: 50px;">
                 <div class="doctor-img">
                   <img src="${doctors[i].img}" width="auto" class="" height="100%" alt="">
                 </div>
