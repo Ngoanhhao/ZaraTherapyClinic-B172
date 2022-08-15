@@ -903,10 +903,10 @@ ul .nav-item a:hover {
   background-image: linear-gradient(0, #96c0ef, #0d6efd);
 }
 /* contact */
-.background-contacts {
+/* .background-contacts { */
   /* background: url(../anh_background/background-spa-png-6.jpg);
   background-size: cover; */
-}
+/* } */
 .contact-body-content {
   padding: 20px 0;
 }
